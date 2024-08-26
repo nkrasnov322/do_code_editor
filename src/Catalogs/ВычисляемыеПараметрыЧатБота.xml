@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="693e0054-19a0-4582-bc91-c91843469fa2">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ВычисляемыеПараметрыЧатБота" category="Object">
+				<xr:TypeId>50c8d1cc-95c8-40b0-990c-35a8728f3e8b</xr:TypeId>
+				<xr:ValueId>7fb79cdc-5deb-4c46-9d68-425625438b19</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ВычисляемыеПараметрыЧатБота" category="Ref">
+				<xr:TypeId>d87c952e-3486-46d7-ac03-a485a9f11687</xr:TypeId>
+				<xr:ValueId>32d5673f-48a6-490f-9c7c-2e2bfec95995</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ВычисляемыеПараметрыЧатБота" category="Selection">
+				<xr:TypeId>0440941b-6a38-46df-8fe8-ae2ade8cfc3d</xr:TypeId>
+				<xr:ValueId>b3c6f0e2-98f1-41f5-afdf-bd0fb4d8d871</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ВычисляемыеПараметрыЧатБота" category="List">
+				<xr:TypeId>d2abf11a-b70b-4c04-a537-a9bba1898be8</xr:TypeId>
+				<xr:ValueId>19de8bd0-3497-4135-88f5-7cbfb8499de4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ВычисляемыеПараметрыЧатБота" category="Manager">
+				<xr:TypeId>b8958e84-0f7f-40da-90eb-fd44e3e5d7c7</xr:TypeId>
+				<xr:ValueId>15888893-d53a-4713-9623-40d5cf15be9c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВычисляемыеПараметрыЧатБота</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a8dd55d8-e15d-40b4-aab4-3e42fceca011</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

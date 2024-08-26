@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen" callType="After">РК_ПриОткрытииПосле</Event>
+		<Event name="BeforeWrite" callType="After">РК_ПередЗаписьюПосле</Event>
+		<Event name="OnCreateAtServer" callType="After">РК_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ПояснениеПредопределенного" id="26">
+			<TextColor>style:ИнформационнаяНадпись</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предопределенная автоподстановка не редактируется</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПояснениеПредопределенногоКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ПояснениеПредопределенногоРасширеннаяПодсказка" id="28"/>
+		</LabelDecoration>
+		<InputField name="Наименование" id="1">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Родитель" id="4">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<RadioButtonField name="ТипОбъекта" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип</v8:content>
+				</v8:item>
+			</Title>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Общая</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:nil="true"/>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Для документов</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ТипыОбъектов.EnumValue.ДокументыПредприятия</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Для мероприятий</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ТипыОбъектов.EnumValue.Мероприятия</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Для наименования задач</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ТипыОбъектов.EnumValue.НаименованияОписанияЗадач</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="31"/>
+			<Events>
+				<Event name="OnChange" callType="After">РК_ТипОбъектаПриИзмененииПосле</Event>
+			</Events>
+		</RadioButtonField>
+		<InputField name="Выражение" id="7">
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>80</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>12</Height>
+			<MultiLine>true</MultiLine>
+			<Font ref="style:ШрифтСкрипта" kind="StyleItem"/>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект - СправочникОбъект.ДокументПредприятия, СправочникОбъект.Мероприятия; Результат - возвращаемый результат.</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ВыражениеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Комментарий" id="21">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<UsualGroup name="ГруппаДаты" id="19">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа даты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа даты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="ДатаСоздания" id="10">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="ДатаИзменения" id="13">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.17">
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<LabelDecoration name="ПояснениеПредопределенного" id="26">
+				<TextColor>style:ИнформационнаяНадпись</TextColor>
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Предопределенная автоподстановка не редактируется</v8:content>
+					</v8:item>
+				</Title>
+				<ContextMenu name="ПояснениеПредопределенногоКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ПояснениеПредопределенногоРасширеннаяПодсказка" id="28"/>
+			</LabelDecoration>
+			<InputField name="Наименование" id="1">
+				<EditMode>EnterOnInput</EditMode>
+				<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+				<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+			</InputField>
+			<InputField name="Родитель" id="4">
+				<EditMode>EnterOnInput</EditMode>
+				<ContextMenu name="РодительКонтекстноеМеню" id="5"/>
+				<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="6"/>
+			</InputField>
+			<RadioButtonField name="ТипОбъекта" id="29">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Тип</v8:content>
+					</v8:item>
+				</Title>
+				<RadioButtonType>Tumbler</RadioButtonType>
+				<ChoiceList>
+					<xr:Item>
+						<xr:Presentation/>
+						<xr:CheckState>0</xr:CheckState>
+						<xr:Value xsi:type="FormChoiceListDesTimeValue">
+							<Presentation>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общая</v8:content>
+								</v8:item>
+							</Presentation>
+							<Value xsi:nil="true"/>
+						</xr:Value>
+					</xr:Item>
+					<xr:Item>
+						<xr:Presentation/>
+						<xr:CheckState>0</xr:CheckState>
+						<xr:Value xsi:type="FormChoiceListDesTimeValue">
+							<Presentation>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для документов</v8:content>
+								</v8:item>
+							</Presentation>
+							<Value xsi:type="xr:DesignTimeRef">Enum.ТипыОбъектов.EnumValue.ДокументыПредприятия</Value>
+						</xr:Value>
+					</xr:Item>
+					<xr:Item>
+						<xr:Presentation/>
+						<xr:CheckState>0</xr:CheckState>
+						<xr:Value xsi:type="FormChoiceListDesTimeValue">
+							<Presentation>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для мероприятий</v8:content>
+								</v8:item>
+							</Presentation>
+							<Value xsi:type="xr:DesignTimeRef">Enum.ТипыОбъектов.EnumValue.Мероприятия</Value>
+						</xr:Value>
+					</xr:Item>
+					<xr:Item>
+						<xr:Presentation/>
+						<xr:CheckState>0</xr:CheckState>
+						<xr:Value xsi:type="FormChoiceListDesTimeValue">
+							<Presentation>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для наименования задач</v8:content>
+								</v8:item>
+							</Presentation>
+							<Value xsi:type="xr:DesignTimeRef">Enum.ТипыОбъектов.EnumValue.НаименованияОписанияЗадач</Value>
+						</xr:Value>
+					</xr:Item>
+				</ChoiceList>
+				<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="31"/>
+			</RadioButtonField>
+			<InputField name="Выражение" id="7">
+				<TitleLocation>None</TitleLocation>
+				<EditMode>EnterOnInput</EditMode>
+				<Width>80</Width>
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<Height>12</Height>
+				<MultiLine>true</MultiLine>
+				<Font ref="style:ШрифтСкрипта" kind="StyleItem"/>
+				<InputHint>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Объект - СправочникОбъект.ДокументПредприятия, СправочникОбъект.Мероприятия; Результат - возвращаемый результат.</v8:content>
+					</v8:item>
+				</InputHint>
+				<ContextMenu name="ВыражениеКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="9"/>
+			</InputField>
+			<InputField name="Комментарий" id="21">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<MultiLine>true</MultiLine>
+				<ContextMenu name="КомментарийКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="23"/>
+			</InputField>
+			<UsualGroup name="ГруппаДаты" id="19">
+				<ReadOnly>true</ReadOnly>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа даты</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа даты</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>AlwaysHorizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ThroughAlign>DontUse</ThroughAlign>
+				<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="20"/>
+				<ChildItems>
+					<InputField name="ДатаСоздания" id="10">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="12"/>
+					</InputField>
+					<InputField name="ДатаИзменения" id="13">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="15"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

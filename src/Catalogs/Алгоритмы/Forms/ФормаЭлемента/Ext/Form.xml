@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen" callType="After">РК_ПриОткрытииПосле</Event>
+		<Event name="BeforeWrite" callType="Before">РК_ПередЗаписьюПеред</Event>
+		<Event name="BeforeWrite" callType="After">РК_ПередЗаписьюПосле</Event>
+		<Event name="OnCreateAtServer" callType="After">РК_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ПояснениеПредопределенного" id="24">
+			<TextColor>style:ИнформационнаяНадпись</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предопределенный алгоритм не редактируется</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПояснениеПредопределенногоКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ПояснениеПредопределенногоРасширеннаяПодсказка" id="26"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаПометкаУдаления" id="27">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пометка удаления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пометка удаления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ОбъектПомеченНаУдаление</BackColor>
+			<ExtendedTooltip name="ГруппаПометкаУдаленияРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<PictureDecoration name="ПометкаУдаленияКартинка" id="29">
+					<Width>5</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления картинка</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ПометкаУдаленияКартинкаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПометкаУдаленияКартинкаРасширеннаяПодсказка" id="31"/>
+				</PictureDecoration>
+				<LabelDecoration name="ПометкаУдаленияНадпись" id="32">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Алгоритм помечен на удаление</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="ПометкаУдаленияНадписьКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПометкаУдаленияНадписьРасширеннаяПодсказка" id="34"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="1">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Родитель" id="21">
+			<ContextMenu name="РодительКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="КлючДляВызова" id="13">
+			<SkipOnInput>true</SkipOnInput>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+			<WarningOnEdit>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменение ключа может сделать неработоспособными скрипты, вызывающие этот алгоритм</v8:content>
+				</v8:item>
+			</WarningOnEdit>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КлючДляВызоваКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КлючДляВызоваРасширеннаяПодсказка" id="15">
+				<Title formatted="true">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>По этому ключу можно будет вызвать алгоритм в скриптах:
+&lt;i&gt;Справочники.Алгоритмы.Вызвать(&lt;/&gt;&lt;b&gt;&lt;i&gt;КлючДляВызова&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;/&gt;&lt;i&gt;, Параметры)&lt;/&gt;</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</InputField>
+		<TextDocumentField name="Выражение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выражение на встроенном языке</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>80</Width>
+			<Font ref="style:ШрифтСкрипта" kind="StyleItem"/>
+			<ContextMenu name="ВыражениеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="6"/>
+		</TextDocumentField>
+		<InputField name="Комментарий" id="18">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<UsualGroup name="ГруппаДаты" id="16">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа даты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа даты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="ДатаСоздания" id="7">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ДатаИзменения" id="10">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.17">
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<LabelDecoration name="ПояснениеПредопределенного" id="24">
+				<TextColor>style:ИнформационнаяНадпись</TextColor>
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Предопределенный алгоритм не редактируется</v8:content>
+					</v8:item>
+				</Title>
+				<ContextMenu name="ПояснениеПредопределенногоКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ПояснениеПредопределенногоРасширеннаяПодсказка" id="26"/>
+			</LabelDecoration>
+			<UsualGroup name="ГруппаПометкаУдаления" id="27">
+				<Visible>false</Visible>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа пометка удаления</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа пометка удаления</v8:content>
+					</v8:item>
+				</ToolTip>
+				<HorizontalStretch>true</HorizontalStretch>
+				<VerticalStretch>false</VerticalStretch>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<ShowTitle>false</ShowTitle>
+				<BackColor>style:ОбъектПомеченНаУдаление</BackColor>
+				<ExtendedTooltip name="ГруппаПометкаУдаленияРасширеннаяПодсказка" id="28"/>
+				<ChildItems>
+					<PictureDecoration name="ПометкаУдаленияКартинка" id="29">
+						<Width>5</Width>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<Height>1</Height>
+						<HorizontalStretch>false</HorizontalStretch>
+						<SkipOnInput>false</SkipOnInput>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пометка удаления картинка</v8:content>
+							</v8:item>
+						</Title>
+						<FileDragMode>AsFile</FileDragMode>
+						<ContextMenu name="ПометкаУдаленияКартинкаКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="ПометкаУдаленияКартинкаРасширеннаяПодсказка" id="31"/>
+					</PictureDecoration>
+					<LabelDecoration name="ПометкаУдаленияНадпись" id="32">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Алгоритм помечен на удаление</v8:content>
+							</v8:item>
+						</Title>
+						<GroupVerticalAlign>Center</GroupVerticalAlign>
+						<ContextMenu name="ПометкаУдаленияНадписьКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="ПометкаУдаленияНадписьРасширеннаяПодсказка" id="34"/>
+					</LabelDecoration>
+				</ChildItems>
+			</UsualGroup>
+			<InputField name="Наименование" id="1">
+				<EditMode>EnterOnInput</EditMode>
+				<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+				<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+			</InputField>
+			<InputField name="Родитель" id="21">
+				<ContextMenu name="РодительКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="23"/>
+			</InputField>
+			<InputField name="КлючДляВызова" id="13">
+				<SkipOnInput>true</SkipOnInput>
+				<ToolTipRepresentation>Button</ToolTipRepresentation>
+				<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+				<WarningOnEdit>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Изменение ключа может сделать неработоспособными скрипты, вызывающие этот алгоритм</v8:content>
+					</v8:item>
+				</WarningOnEdit>
+				<EditMode>EnterOnInput</EditMode>
+				<ContextMenu name="КлючДляВызоваКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="КлючДляВызоваРасширеннаяПодсказка" id="15">
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По этому ключу можно будет вызвать алгоритм в скриптах:
+&lt;i&gt;Справочники.Алгоритмы.Вызвать(&lt;/&gt;&lt;b&gt;&lt;i&gt;КлючДляВызова&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;/&gt;&lt;i&gt;, Параметры)&lt;/&gt;</v8:content>
+						</v8:item>
+					</Title>
+				</ExtendedTooltip>
+			</InputField>
+			<TextDocumentField name="Выражение" id="4">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выражение на встроенном языке</v8:content>
+					</v8:item>
+				</Title>
+				<TitleLocation>None</TitleLocation>
+				<EditMode>EnterOnInput</EditMode>
+				<Width>80</Width>
+				<Font ref="style:ШрифтСкрипта" kind="StyleItem"/>
+				<ContextMenu name="ВыражениеКонтекстноеМеню" id="5"/>
+				<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="6"/>
+			</TextDocumentField>
+			<InputField name="Комментарий" id="18">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<MultiLine>true</MultiLine>
+				<ContextMenu name="КомментарийКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="20"/>
+			</InputField>
+			<UsualGroup name="ГруппаДаты" id="16">
+				<ReadOnly>true</ReadOnly>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа даты</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа даты</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>AlwaysHorizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ThroughAlign>DontUse</ThroughAlign>
+				<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="17"/>
+				<ChildItems>
+					<InputField name="ДатаСоздания" id="7">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="9"/>
+					</InputField>
+					<InputField name="ДатаИзменения" id="10">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="12"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

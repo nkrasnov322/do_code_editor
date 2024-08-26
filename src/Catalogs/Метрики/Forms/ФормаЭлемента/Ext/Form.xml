@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВычислитьРезультат" id="43">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаВычислитьРезультатРасширеннаяПодсказка" id="44"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen" callType="After">РК_ПриОткрытииПосле</Event>
+		<Event name="BeforeWrite" callType="After">РК_ПередЗаписьюПосле</Event>
+		<Event name="OnCreateAtServer" callType="After">РК_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="4">
+			<EditMode>EnterOnInput</EditMode>
+			<Width>40</Width>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="НаименованиеИНедействителен" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование и недействителен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование и недействителен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НаименованиеИНедействителенРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПериодЗамеров" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период замеров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период замеров</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПериодЗамеровРасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<InputField name="ПериодЗамеров" id="10">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Замерять каждые</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="ПериодЗамеровКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПериодЗамеровРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<LabelDecoration name="ПериодЗамеровЕдИзм" id="34">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>минут</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПериодЗамеровЕдИзмКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ПериодЗамеровЕдИзмРасширеннаяПодсказка" id="36"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ОтступПоГоризонтали" id="21">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ОтступПоГоризонталиКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ОтступПоГоризонталиРасширеннаяПодсказка" id="23"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПериодХранения" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период хранения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период хранения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодХраненияРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<InputField name="ПериодХранения" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хранить замеры</v8:content>
+						</v8:item>
+					</Title>
+					<SpinButton>true</SpinButton>
+					<ContextMenu name="ПериодХраненияКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ПериодХраненияРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<LabelDecoration name="ПериодХраненияЕдИзм" id="29">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>дней (если 0, то бессрочно)</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПериодХраненияЕдИзмКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПериодХраненияЕдИзмРасширеннаяПодсказка" id="31"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="Недействителен" id="7">
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НедействителенКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НедействителенРасширеннаяПодсказка" id="9"/>
+		</CheckBoxField>
+		<InputField name="Выражение" id="40">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>9</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<MultiLine>true</MultiLine>
+			<Font ref="style:ШрифтСкрипта" kind="StyleItem"/>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат = ... ;</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ВыражениеКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="Описание" id="37">
+			<TitleLocation>Left</TitleLocation>
+			<Height>2</Height>
+			<VerticalStretch>false</VerticalStretch>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="39"/>
+		</InputField>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.17">
+		<CommandSet>
+			<ExcludedCommand>Abort</ExcludedCommand>
+			<ExcludedCommand>Cancel</ExcludedCommand>
+			<ExcludedCommand>Copy</ExcludedCommand>
+			<ExcludedCommand>Delete</ExcludedCommand>
+			<ExcludedCommand>Ignore</ExcludedCommand>
+			<ExcludedCommand>No</ExcludedCommand>
+			<ExcludedCommand>OK</ExcludedCommand>
+			<ExcludedCommand>RestoreValues</ExcludedCommand>
+			<ExcludedCommand>Retry</ExcludedCommand>
+			<ExcludedCommand>SaveValues</ExcludedCommand>
+			<ExcludedCommand>Yes</ExcludedCommand>
+		</CommandSet>
+		<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<Button name="ФормаВычислитьРезультат" id="43">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаВычислитьРезультатРасширеннаяПодсказка" id="44"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<InputField name="Наименование" id="4">
+				<EditMode>EnterOnInput</EditMode>
+				<Width>40</Width>
+				<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+				<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+			</InputField>
+			<UsualGroup name="НаименованиеИНедействителен" id="19">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Наименование и недействителен</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Наименование и недействителен</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="НаименованиеИНедействителенРасширеннаяПодсказка" id="20"/>
+				<ChildItems>
+					<UsualGroup name="ГруппаПериодЗамеров" id="32">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа период замеров</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа период замеров</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Group>Horizontal</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаПериодЗамеровРасширеннаяПодсказка" id="33"/>
+						<ChildItems>
+							<InputField name="ПериодЗамеров" id="10">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Замерять каждые</v8:content>
+									</v8:item>
+								</Title>
+								<EditMode>EnterOnInput</EditMode>
+								<SpinButton>true</SpinButton>
+								<ContextMenu name="ПериодЗамеровКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="ПериодЗамеровРасширеннаяПодсказка" id="12"/>
+							</InputField>
+							<LabelDecoration name="ПериодЗамеровЕдИзм" id="34">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>минут</v8:content>
+									</v8:item>
+								</Title>
+								<ContextMenu name="ПериодЗамеровЕдИзмКонтекстноеМеню" id="35"/>
+								<ExtendedTooltip name="ПериодЗамеровЕдИзмРасширеннаяПодсказка" id="36"/>
+							</LabelDecoration>
+						</ChildItems>
+					</UsualGroup>
+					<LabelDecoration name="ОтступПоГоризонтали" id="21">
+						<HorizontalStretch>true</HorizontalStretch>
+						<ContextMenu name="ОтступПоГоризонталиКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="ОтступПоГоризонталиРасширеннаяПодсказка" id="23"/>
+					</LabelDecoration>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаПериодХранения" id="27">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа период хранения</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа период хранения</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаПериодХраненияРасширеннаяПодсказка" id="28"/>
+				<ChildItems>
+					<InputField name="ПериодХранения" id="24">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Хранить замеры</v8:content>
+							</v8:item>
+						</Title>
+						<SpinButton>true</SpinButton>
+						<ContextMenu name="ПериодХраненияКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="ПериодХраненияРасширеннаяПодсказка" id="26"/>
+					</InputField>
+					<LabelDecoration name="ПериодХраненияЕдИзм" id="29">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>дней (если 0, то бессрочно)</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="ПериодХраненияЕдИзмКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="ПериодХраненияЕдИзмРасширеннаяПодсказка" id="31"/>
+					</LabelDecoration>
+				</ChildItems>
+			</UsualGroup>
+			<CheckBoxField name="Недействителен" id="7">
+				<TitleLocation>Right</TitleLocation>
+				<EditMode>EnterOnInput</EditMode>
+				<CheckBoxType>Auto</CheckBoxType>
+				<ContextMenu name="НедействителенКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="НедействителенРасширеннаяПодсказка" id="9"/>
+			</CheckBoxField>
+			<InputField name="Выражение" id="40">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<Height>9</Height>
+				<AutoMaxHeight>false</AutoMaxHeight>
+				<MultiLine>true</MultiLine>
+				<Font ref="style:ШрифтСкрипта" kind="StyleItem"/>
+				<InputHint>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Результат = ... ;</v8:content>
+					</v8:item>
+				</InputHint>
+				<ContextMenu name="ВыражениеКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="42"/>
+			</InputField>
+			<InputField name="Описание" id="37">
+				<TitleLocation>Left</TitleLocation>
+				<Height>2</Height>
+				<VerticalStretch>false</VerticalStretch>
+				<MultiLine>true</MultiLine>
+				<ContextMenu name="ОписаниеКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="39"/>
+			</InputField>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

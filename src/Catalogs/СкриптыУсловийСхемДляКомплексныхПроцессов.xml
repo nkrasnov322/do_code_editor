@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="90ad4bf3-5427-4145-8cfb-190210bdb092">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СкриптыУсловийСхемДляКомплексныхПроцессов" category="Object">
+				<xr:TypeId>32d2f24c-2d6b-4a1f-9b04-6fe8dbe81922</xr:TypeId>
+				<xr:ValueId>d03fc6bb-908c-4cbb-8139-65dfa8086814</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СкриптыУсловийСхемДляКомплексныхПроцессов" category="Ref">
+				<xr:TypeId>7d335741-ee9c-41eb-8fbd-14afd3519e50</xr:TypeId>
+				<xr:ValueId>f301f471-d03d-46b3-8ccc-fac3cd1b6296</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СкриптыУсловийСхемДляКомплексныхПроцессов" category="Selection">
+				<xr:TypeId>90a6b43c-f9d8-4a1e-b1c1-f209bb55ef4d</xr:TypeId>
+				<xr:ValueId>55eaf0ed-cd9f-407f-a52d-bea991813f8c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СкриптыУсловийСхемДляКомплексныхПроцессов" category="List">
+				<xr:TypeId>ce671a65-eed6-444d-a613-6d6d9d86ddaf</xr:TypeId>
+				<xr:ValueId>f9bd35cd-f054-46d1-ba4e-7d79a7186ea9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СкриптыУсловийСхемДляКомплексныхПроцессов" category="Manager">
+				<xr:TypeId>d0ee05f9-ea3a-42f1-bbd7-4be7c87f87a5</xr:TypeId>
+				<xr:ValueId>0f7d6906-7072-4065-86b9-8a3c65e8822c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СкриптыУсловийСхемДляКомплексныхПроцессов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>184b05f3-b9dd-4e3c-b0a4-2f78b6b8d16c</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

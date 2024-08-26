@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="49b3a2a8-a49d-4719-a147-d9c3be2870cc">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ОбластиПоискаЧатБота" category="Object">
+				<xr:TypeId>dc318959-4d65-46f7-a3d6-60fcfb6bfa75</xr:TypeId>
+				<xr:ValueId>67250c82-6726-49cd-9108-c2a3e51de398</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ОбластиПоискаЧатБота" category="Ref">
+				<xr:TypeId>506d4cb5-5ddc-4661-add8-8279d1a860e5</xr:TypeId>
+				<xr:ValueId>02ad5d99-db95-418b-8431-de1a87a73955</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ОбластиПоискаЧатБота" category="Selection">
+				<xr:TypeId>5e3cb9be-28db-4bfe-898a-db8138fda5ce</xr:TypeId>
+				<xr:ValueId>e4e7792b-9357-4ce9-be8a-0f97865fca0c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ОбластиПоискаЧатБота" category="List">
+				<xr:TypeId>84dda006-7cf5-47f0-b798-de846775ea44</xr:TypeId>
+				<xr:ValueId>c157a411-b387-45c1-96a9-e7de110794c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ОбластиПоискаЧатБота" category="Manager">
+				<xr:TypeId>83d61031-97ba-42d4-b14e-ea15a576aa57</xr:TypeId>
+				<xr:ValueId>b1818dde-0cd8-483a-ad4b-873945486538</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОбластиПоискаЧатБота</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>17020a52-8a24-4d68-aae7-ffa19da39ffe</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

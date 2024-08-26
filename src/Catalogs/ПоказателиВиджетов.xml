@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="6963a31b-8997-4de9-b465-ea61f6ea8c3f">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПоказателиВиджетов" category="Object">
+				<xr:TypeId>30de5269-f445-414a-ac6b-0e29cff191c9</xr:TypeId>
+				<xr:ValueId>9693c868-01a1-4bc9-b90e-87a0cc41245b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПоказателиВиджетов" category="Ref">
+				<xr:TypeId>4552caa1-5410-4a44-a20c-19eb31947dd6</xr:TypeId>
+				<xr:ValueId>94ec563b-d80d-497e-9019-1cb5fcb6c288</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПоказателиВиджетов" category="Selection">
+				<xr:TypeId>d93e7d20-6ecc-4650-8be6-eb1036b09ad9</xr:TypeId>
+				<xr:ValueId>0e16d3e9-1a10-4f75-a94f-8aed998a9583</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПоказателиВиджетов" category="List">
+				<xr:TypeId>7220b214-3c61-4544-8634-fb8f3774dbf1</xr:TypeId>
+				<xr:ValueId>1e2af532-0de9-43e1-8a11-9236e857e005</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПоказателиВиджетов" category="Manager">
+				<xr:TypeId>0f2a236b-88ee-4bea-9c40-9350fe68e542</xr:TypeId>
+				<xr:ValueId>ac4aa34a-2494-4c06-a84c-f52e3874257e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПоказателиВиджетов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>2fac22e0-71e2-4f10-8c6e-2eb45e402f77</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="57943e54-e7ea-4b98-985d-22fa1e6bbe41">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.АлгоритмыПроверки" category="Object">
+				<xr:TypeId>1172e0cf-3de2-4804-b71b-ef5a0f277afd</xr:TypeId>
+				<xr:ValueId>865b5e96-e0ee-42bf-a8ec-c214707370b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.АлгоритмыПроверки" category="Ref">
+				<xr:TypeId>5843ac1f-030e-42cf-8e75-b16f3990b431</xr:TypeId>
+				<xr:ValueId>d1064c66-4358-4f59-8061-774de2c29b82</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.АлгоритмыПроверки" category="Selection">
+				<xr:TypeId>b97ca8f9-c7c0-4c2c-ab15-9ef6582a7a78</xr:TypeId>
+				<xr:ValueId>6d53be46-d776-4137-97b2-0a86fcb48bef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.АлгоритмыПроверки" category="List">
+				<xr:TypeId>f201423e-cac9-49e3-80f3-f2b4922cb19e</xr:TypeId>
+				<xr:ValueId>10e7561c-aacf-43d8-b379-28d59fbb57d4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.АлгоритмыПроверки" category="Manager">
+				<xr:TypeId>3c00c433-0e01-4dc2-9f62-ae84945b3a26</xr:TypeId>
+				<xr:ValueId>10a826a0-7c55-46f2-a2ad-629332ffd799</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>АлгоритмыПроверки</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>59556701-d153-47b4-a9c8-5ba7c19b06e3</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="3294de25-74ef-48b4-a812-03ed71da1cf3">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВыражениеУсловия</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9c7a40b9-9c59-41eb-b17b-a7f8ffafdc3e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

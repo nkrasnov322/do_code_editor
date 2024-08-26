@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="aede0edc-a3ae-4cc2-856d-717f48458110">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Метрики" category="Object">
+				<xr:TypeId>1903603f-a930-474f-8096-835ef064ffa7</xr:TypeId>
+				<xr:ValueId>3f25b5a3-2202-4ebd-8720-4b2594c87492</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Метрики" category="Ref">
+				<xr:TypeId>6c9c5343-298a-4239-83fc-9bc605c56108</xr:TypeId>
+				<xr:ValueId>2dbe69a2-cdca-4244-a2c2-43c477f47fe6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Метрики" category="Selection">
+				<xr:TypeId>2ab619c1-8012-4baa-aa45-c16d1962229d</xr:TypeId>
+				<xr:ValueId>898a1b03-6b2b-4762-af1c-1bb7736a01d4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Метрики" category="List">
+				<xr:TypeId>be3a595a-ff62-478d-b2c9-67bcd072c635</xr:TypeId>
+				<xr:ValueId>62283e85-5a1c-47b6-9483-2c4dfbc503aa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Метрики" category="Manager">
+				<xr:TypeId>0468fe31-3e2d-43d3-8f8f-afa11fc41a46</xr:TypeId>
+				<xr:ValueId>6a61ae88-7e8d-4892-a120-f5bd4e0eb696</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Метрики</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>4f896512-9bfb-449f-a2fe-56a6f4ca4570</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

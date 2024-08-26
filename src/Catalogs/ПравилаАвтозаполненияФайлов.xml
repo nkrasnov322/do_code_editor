@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="e2d1ddfb-d646-4cf8-9d5b-3222f77901bc">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПравилаАвтозаполненияФайлов" category="Object">
+				<xr:TypeId>d838bfea-a44c-47d8-9812-1a00e555aeca</xr:TypeId>
+				<xr:ValueId>0081c1bd-e033-4c1a-aba0-121a2e43b049</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПравилаАвтозаполненияФайлов" category="Ref">
+				<xr:TypeId>2794f8a5-07eb-4ec7-919b-4580d7e4aaf9</xr:TypeId>
+				<xr:ValueId>7c63a1fd-ef07-4d0f-8cac-25cdb126674a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПравилаАвтозаполненияФайлов" category="Selection">
+				<xr:TypeId>eb3582b3-01b3-40c2-b59d-40d56a862e2f</xr:TypeId>
+				<xr:ValueId>23ab91ee-e09f-440a-9865-71da0bc96726</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПравилаАвтозаполненияФайлов" category="List">
+				<xr:TypeId>e36b013d-2de1-4df0-bc8d-03c4fe251a31</xr:TypeId>
+				<xr:ValueId>173e27b7-a541-40ad-877b-7a4e7459930b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПравилаАвтозаполненияФайлов" category="Manager">
+				<xr:TypeId>ba1d79af-f3a1-4dfc-926c-a97260b9e959</xr:TypeId>
+				<xr:ValueId>91c20e7e-080b-46e1-8e5f-1348349f23b3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПравилаАвтозаполненияФайлов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>bf40fab1-67c9-4b24-bb99-42d4ddfdb3dd</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ВводСкрипта</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

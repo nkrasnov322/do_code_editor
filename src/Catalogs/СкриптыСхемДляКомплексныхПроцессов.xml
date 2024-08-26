@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="d76951e5-6989-47e3-8bb4-45d1c3f497d4">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СкриптыСхемДляКомплексныхПроцессов" category="Object">
+				<xr:TypeId>fbec7510-2b56-4219-910b-dba102542e94</xr:TypeId>
+				<xr:ValueId>e2b2b486-ef4e-4e01-a84f-a16d82caf0a9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СкриптыСхемДляКомплексныхПроцессов" category="Ref">
+				<xr:TypeId>61fb8dae-78e6-4ffd-9f2a-c3744ef724e7</xr:TypeId>
+				<xr:ValueId>1bfe5f9e-724a-4db8-92ac-80909d340907</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СкриптыСхемДляКомплексныхПроцессов" category="Selection">
+				<xr:TypeId>54865d7f-6e94-4e63-9e53-9df6931b2de1</xr:TypeId>
+				<xr:ValueId>dca5c336-13ae-4a6c-b52b-eeadc7ee5a3d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СкриптыСхемДляКомплексныхПроцессов" category="List">
+				<xr:TypeId>258a76e0-cc5a-4f7c-b36f-db4112290dca</xr:TypeId>
+				<xr:ValueId>f644b645-5ccf-4f06-b688-82bfb7bf1b6a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СкриптыСхемДляКомплексныхПроцессов" category="Manager">
+				<xr:TypeId>d8d37459-1322-4bdf-9907-2cdc42aaeb9c</xr:TypeId>
+				<xr:ValueId>6096d023-80b2-467d-86de-dc7272c9a26d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СкриптыСхемДляКомплексныхПроцессов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>8dc54628-a4de-418b-ae74-33e471930fdc</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

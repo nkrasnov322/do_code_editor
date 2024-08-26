@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen" callType="After">РК_ПриОткрытииПосле</Event>
+		<Event name="BeforeWrite" callType="After">РК_ПередЗаписьюПосле</Event>
+		<Event name="OnCreateAtServer" callType="After">РК_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПометкаУдаления" id="62">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пометка удаления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пометка удаления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ОбъектПомеченНаУдаление</BackColor>
+			<ExtendedTooltip name="ГруппаПометкаУдаленияРасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<PictureDecoration name="ПометкаУдаленияКартинка" id="64">
+					<Width>5</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления картинка</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ПометкаУдаленияКартинкаКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ПометкаУдаленияКартинкаРасширеннаяПодсказка" id="66"/>
+				</PictureDecoration>
+				<LabelDecoration name="ПометкаУдаленияНадпись" id="67">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показатель помечен на удаление</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="ПометкаУдаленияНадписьКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ПометкаУдаленияНадписьРасширеннаяПодсказка" id="69"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПредопределенный" id="70">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа предопределенный</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пометка удаления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ОбъектПомеченНаУдаление</BackColor>
+			<ExtendedTooltip name="ГруппаПредопределенныйРасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<PictureDecoration name="ПредопределенныйКартинка" id="72">
+					<Width>5</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предопределенный картинка</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ПредопределенныйКартинкаКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ПредопределенныйКартинкаРасширеннаяПодсказка" id="74"/>
+				</PictureDecoration>
+				<LabelDecoration name="ПредопределенныйНадпись" id="75">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предопределенный элемент не доступен для изменения. Скопируйте его для внесения изменений.</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="ПредопределенныйНадписьКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ПредопределенныйНадписьРасширеннаяПодсказка" id="77"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="1">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Условие" id="37">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="УсловиеКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="УсловиеРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<UsualGroup name="ГруппаОформление" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформление</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаОформлениеРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<InputField name="Заголовок" id="119">
+					<ContextMenu name="ЗаголовокКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="Подсказка" id="25">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодсказкаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ПодсказкаРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="Картинка" id="16">
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>true</DropListButton>
+					<ContextMenu name="КартинкаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КартинкаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ЦветВиджетаСерии" id="40">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЦветВиджетаСерииКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ЦветВиджетаСерииРасширеннаяПодсказка" id="42"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗначение" id="93">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаЗначениеРасширеннаяПодсказка" id="94"/>
+			<ChildItems>
+				<InputField name="Тип" id="31">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="Выражение" id="4">
+					<TitleLocation>Left</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВыражениеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="ГрупповойПоказатель" id="7">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГрупповойПоказательКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ГрупповойПоказательРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="СвойствоГрупповогоПоказателя" id="28">
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>true</DropListButton>
+					<ContextMenu name="СвойствоГрупповогоПоказателяКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СвойствоГрупповогоПоказателяРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="ТипЗначенияПоказателя" id="34">
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>true</DropListButton>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Массив</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Массив</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Число</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Число</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ТипЗначенияПоказателяКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТипЗначенияПоказателяРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДействие" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действие</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаДействиеРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<InputField name="Действие" id="10">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДействиеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДействиеРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="ПараметрДействия1" id="19">
+					<TitleLocation>Left</TitleLocation>
+					<TitleHeight>2</TitleHeight>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрДействия1КонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ПараметрДействия1РасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ПараметрДействия2" id="22">
+					<TitleLocation>Left</TitleLocation>
+					<TitleHeight>2</TitleHeight>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрДействия2КонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПараметрДействия2РасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="Источник" id="13">
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>true</DropListButton>
+					<ContextMenu name="ИсточникКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСобытияОповещения" id="117">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События оповещения</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаСобытияОповещенияРасширеннаяПодсказка" id="118"/>
+			<ChildItems>
+				<Table name="События" id="43">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СобытияКонтекстноеМеню" id="44"/>
+					<AutoCommandBar name="СобытияКоманднаяПанель" id="45"/>
+					<ExtendedTooltip name="СобытияРасширеннаяПодсказка" id="46"/>
+					<SearchStringAddition name="СобытияСтрокаПоиска" id="47">
+						<AdditionSource>
+							<Item>События</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СобытияСтрокаПоискаКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="СобытияСтрокаПоискаРасширеннаяПодсказка" id="49"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СобытияСостояниеПросмотра" id="50">
+						<AdditionSource>
+							<Item>События</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СобытияСостояниеПросмотраКонтекстноеМеню" id="51"/>
+						<ExtendedTooltip name="СобытияСостояниеПросмотраРасширеннаяПодсказка" id="52"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СобытияУправлениеПоиском" id="53">
+						<AdditionSource>
+							<Item>События</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СобытияУправлениеПоискомКонтекстноеМеню" id="54"/>
+						<ExtendedTooltip name="СобытияУправлениеПоискомРасширеннаяПодсказка" id="55"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СобытияИмяСобытия" id="59">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СобытияИмяСобытияКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="СобытияИмяСобытияРасширеннаяПодсказка" id="61"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.17">
+		<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<UsualGroup name="ГруппаПометкаУдаления" id="62">
+				<Visible>false</Visible>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа пометка удаления</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа пометка удаления</v8:content>
+					</v8:item>
+				</ToolTip>
+				<HorizontalStretch>true</HorizontalStretch>
+				<VerticalStretch>false</VerticalStretch>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<ShowTitle>false</ShowTitle>
+				<BackColor>style:ОбъектПомеченНаУдаление</BackColor>
+				<ExtendedTooltip name="ГруппаПометкаУдаленияРасширеннаяПодсказка" id="63"/>
+				<ChildItems>
+					<PictureDecoration name="ПометкаУдаленияКартинка" id="64">
+						<Width>5</Width>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<Height>1</Height>
+						<HorizontalStretch>false</HorizontalStretch>
+						<SkipOnInput>false</SkipOnInput>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пометка удаления картинка</v8:content>
+							</v8:item>
+						</Title>
+						<FileDragMode>AsFile</FileDragMode>
+						<ContextMenu name="ПометкаУдаленияКартинкаКонтекстноеМеню" id="65"/>
+						<ExtendedTooltip name="ПометкаУдаленияКартинкаРасширеннаяПодсказка" id="66"/>
+					</PictureDecoration>
+					<LabelDecoration name="ПометкаУдаленияНадпись" id="67">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Показатель помечен на удаление</v8:content>
+							</v8:item>
+						</Title>
+						<GroupVerticalAlign>Center</GroupVerticalAlign>
+						<ContextMenu name="ПометкаУдаленияНадписьКонтекстноеМеню" id="68"/>
+						<ExtendedTooltip name="ПометкаУдаленияНадписьРасширеннаяПодсказка" id="69"/>
+					</LabelDecoration>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаПредопределенный" id="70">
+				<Visible>false</Visible>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа предопределенный</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа пометка удаления</v8:content>
+					</v8:item>
+				</ToolTip>
+				<HorizontalStretch>true</HorizontalStretch>
+				<VerticalStretch>false</VerticalStretch>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<ShowTitle>false</ShowTitle>
+				<BackColor>style:ОбъектПомеченНаУдаление</BackColor>
+				<ExtendedTooltip name="ГруппаПредопределенныйРасширеннаяПодсказка" id="71"/>
+				<ChildItems>
+					<PictureDecoration name="ПредопределенныйКартинка" id="72">
+						<Width>5</Width>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<Height>1</Height>
+						<HorizontalStretch>false</HorizontalStretch>
+						<SkipOnInput>false</SkipOnInput>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Предопределенный картинка</v8:content>
+							</v8:item>
+						</Title>
+						<GroupVerticalAlign>Center</GroupVerticalAlign>
+						<FileDragMode>AsFile</FileDragMode>
+						<ContextMenu name="ПредопределенныйКартинкаКонтекстноеМеню" id="73"/>
+						<ExtendedTooltip name="ПредопределенныйКартинкаРасширеннаяПодсказка" id="74"/>
+					</PictureDecoration>
+					<LabelDecoration name="ПредопределенныйНадпись" id="75">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Предопределенный элемент не доступен для изменения. Скопируйте его для внесения изменений.</v8:content>
+							</v8:item>
+						</Title>
+						<GroupVerticalAlign>Center</GroupVerticalAlign>
+						<ContextMenu name="ПредопределенныйНадписьКонтекстноеМеню" id="76"/>
+						<ExtendedTooltip name="ПредопределенныйНадписьРасширеннаяПодсказка" id="77"/>
+					</LabelDecoration>
+				</ChildItems>
+			</UsualGroup>
+			<InputField name="Наименование" id="1">
+				<EditMode>EnterOnInput</EditMode>
+				<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+				<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+			</InputField>
+			<InputField name="Условие" id="37">
+				<EditMode>EnterOnInput</EditMode>
+				<ContextMenu name="УсловиеКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="УсловиеРасширеннаяПодсказка" id="39"/>
+			</InputField>
+			<UsualGroup name="ГруппаОформление" id="80">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Оформление</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Collapsible</Behavior>
+				<ControlRepresentation>Picture</ControlRepresentation>
+				<ExtendedTooltip name="ГруппаОформлениеРасширеннаяПодсказка" id="81"/>
+				<ChildItems>
+					<InputField name="Заголовок" id="119">
+						<ContextMenu name="ЗаголовокКонтекстноеМеню" id="120"/>
+						<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="121"/>
+					</InputField>
+					<InputField name="Подсказка" id="25">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ПодсказкаКонтекстноеМеню" id="26"/>
+						<ExtendedTooltip name="ПодсказкаРасширеннаяПодсказка" id="27"/>
+					</InputField>
+					<InputField name="Картинка" id="16">
+						<EditMode>EnterOnInput</EditMode>
+						<DropListButton>true</DropListButton>
+						<ContextMenu name="КартинкаКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="КартинкаРасширеннаяПодсказка" id="18"/>
+					</InputField>
+					<InputField name="ЦветВиджетаСерии" id="40">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ЦветВиджетаСерииКонтекстноеМеню" id="41"/>
+						<ExtendedTooltip name="ЦветВиджетаСерииРасширеннаяПодсказка" id="42"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаЗначение" id="93">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Значение</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Collapsible</Behavior>
+				<ControlRepresentation>Picture</ControlRepresentation>
+				<ExtendedTooltip name="ГруппаЗначениеРасширеннаяПодсказка" id="94"/>
+				<ChildItems>
+					<InputField name="Тип" id="31">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ТипКонтекстноеМеню" id="32"/>
+						<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="33"/>
+					</InputField>
+					<InputField name="Выражение" id="4">
+						<TitleLocation>Left</TitleLocation>
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ВыражениеКонтекстноеМеню" id="5"/>
+						<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="6"/>
+					</InputField>
+					<InputField name="ГрупповойПоказатель" id="7">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ГрупповойПоказательКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="ГрупповойПоказательРасширеннаяПодсказка" id="9"/>
+					</InputField>
+					<InputField name="СвойствоГрупповогоПоказателя" id="28">
+						<EditMode>EnterOnInput</EditMode>
+						<DropListButton>true</DropListButton>
+						<ContextMenu name="СвойствоГрупповогоПоказателяКонтекстноеМеню" id="29"/>
+						<ExtendedTooltip name="СвойствоГрупповогоПоказателяРасширеннаяПодсказка" id="30"/>
+					</InputField>
+					<InputField name="ТипЗначенияПоказателя" id="34">
+						<EditMode>EnterOnInput</EditMode>
+						<DropListButton>true</DropListButton>
+						<ChoiceList>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Массив</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">Массив</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Число</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">Число</Value>
+								</xr:Value>
+							</xr:Item>
+						</ChoiceList>
+						<ContextMenu name="ТипЗначенияПоказателяКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="ТипЗначенияПоказателяРасширеннаяПодсказка" id="36"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаДействие" id="78">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Действие</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Collapsible</Behavior>
+				<ControlRepresentation>Picture</ControlRepresentation>
+				<ExtendedTooltip name="ГруппаДействиеРасширеннаяПодсказка" id="79"/>
+				<ChildItems>
+					<InputField name="Действие" id="10">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ДействиеКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="ДействиеРасширеннаяПодсказка" id="12"/>
+					</InputField>
+					<InputField name="ПараметрДействия1" id="19">
+						<TitleLocation>Left</TitleLocation>
+						<TitleHeight>2</TitleHeight>
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ПараметрДействия1КонтекстноеМеню" id="20"/>
+						<ExtendedTooltip name="ПараметрДействия1РасширеннаяПодсказка" id="21"/>
+					</InputField>
+					<InputField name="ПараметрДействия2" id="22">
+						<TitleLocation>Left</TitleLocation>
+						<TitleHeight>2</TitleHeight>
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ПараметрДействия2КонтекстноеМеню" id="23"/>
+						<ExtendedTooltip name="ПараметрДействия2РасширеннаяПодсказка" id="24"/>
+					</InputField>
+					<InputField name="Источник" id="13">
+						<EditMode>EnterOnInput</EditMode>
+						<DropListButton>true</DropListButton>
+						<ContextMenu name="ИсточникКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="15"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаСобытияОповещения" id="117">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>События оповещения</v8:content>
+					</v8:item>
+				</Title>
+				<Behavior>Collapsible</Behavior>
+				<ControlRepresentation>Picture</ControlRepresentation>
+				<ExtendedTooltip name="ГруппаСобытияОповещенияРасширеннаяПодсказка" id="118"/>
+				<ChildItems>
+					<Table name="События" id="43">
+						<Representation>List</Representation>
+						<AutoInsertNewRow>true</AutoInsertNewRow>
+						<EnableStartDrag>true</EnableStartDrag>
+						<EnableDrag>true</EnableDrag>
+						<RowFilter xsi:nil="true"/>
+						<ContextMenu name="СобытияКонтекстноеМеню" id="44"/>
+						<AutoCommandBar name="СобытияКоманднаяПанель" id="45"/>
+						<ExtendedTooltip name="СобытияРасширеннаяПодсказка" id="46"/>
+						<SearchStringAddition name="СобытияСтрокаПоиска" id="47">
+							<AdditionSource>
+								<Item>События</Item>
+								<Type>SearchStringRepresentation</Type>
+							</AdditionSource>
+							<ContextMenu name="СобытияСтрокаПоискаКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="СобытияСтрокаПоискаРасширеннаяПодсказка" id="49"/>
+						</SearchStringAddition>
+						<ViewStatusAddition name="СобытияСостояниеПросмотра" id="50">
+							<AdditionSource>
+								<Item>События</Item>
+								<Type>ViewStatusRepresentation</Type>
+							</AdditionSource>
+							<ContextMenu name="СобытияСостояниеПросмотраКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="СобытияСостояниеПросмотраРасширеннаяПодсказка" id="52"/>
+						</ViewStatusAddition>
+						<SearchControlAddition name="СобытияУправлениеПоиском" id="53">
+							<AdditionSource>
+								<Item>События</Item>
+								<Type>SearchControl</Type>
+							</AdditionSource>
+							<ContextMenu name="СобытияУправлениеПоискомКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="СобытияУправлениеПоискомРасширеннаяПодсказка" id="55"/>
+						</SearchControlAddition>
+						<ChildItems>
+							<InputField name="СобытияИмяСобытия" id="59">
+								<EditMode>EnterOnInput</EditMode>
+								<ContextMenu name="СобытияИмяСобытияКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="СобытияИмяСобытияРасширеннаяПодсказка" id="61"/>
+							</InputField>
+						</ChildItems>
+					</Table>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Введите скрипт</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОК" id="5">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаОКРасширеннаяПодсказка" id="6"/>
+			</Button>
+			<Button name="ФормаДобавитьСклонение" id="9">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьСклонение</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьСклонениеРасширеннаяПодсказка" id="10"/>
+			</Button>
+			<Button name="ФормаДобавитьАлгоритм" id="11">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьАлгоритм</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьАлгоритмРасширеннаяПодсказка" id="12"/>
+			</Button>
+			<Button name="ФормаОтмена" id="2">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="7"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen" callType="After">РК_ПриОткрытииПосле</Event>
+		<Event name="9cc34712-da5f-4faa-a653-343d2085fbe8" callType="After">РК_ПередЗаписьюПосле</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Комментарий" id="3">
+			<TitleLocation>None</TitleLocation>
+			<Width>60</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>10</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="8"/>
+		</InputField>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ДобавитьСклонение" id="1000002">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить склонение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавит пример кода, с помощью которого можно просклонять полученное значения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">РК_ДобавитьСклонениеПосле</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьАлгоритм" id="1000004">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить алгоритм</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить алгоритм</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
+	<BaseForm version="2.17">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Введите скрипт</v8:content>
+			</v8:item>
+		</Title>
+		<AutoTitle>false</AutoTitle>
+		<CommandBarLocation>Bottom</CommandBarLocation>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<HorizontalAlign>Right</HorizontalAlign>
+			<Autofill>false</Autofill>
+			<ChildItems>
+				<Button name="ФормаОК" id="5">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаОКРасширеннаяПодсказка" id="6"/>
+				</Button>
+				<Button name="ФормаДобавитьСклонение" id="9">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ДобавитьСклонение</CommandName>
+					<ExtendedTooltip name="ФормаДобавитьСклонениеРасширеннаяПодсказка" id="10"/>
+				</Button>
+				<Button name="ФормаДобавитьАлгоритм" id="11">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ДобавитьАлгоритм</CommandName>
+					<ExtendedTooltip name="ФормаДобавитьАлгоритмРасширеннаяПодсказка" id="12"/>
+				</Button>
+				<Button name="ФормаОтмена" id="2">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="7"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<InputField name="Комментарий" id="3">
+				<TitleLocation>None</TitleLocation>
+				<Width>60</Width>
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<Height>10</Height>
+				<MultiLine>true</MultiLine>
+				<ContextMenu name="КомментарийКонтекстноеМеню" id="4"/>
+				<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="8"/>
+			</InputField>
+		</ChildItems>
+		<Attributes/>
+		<Commands>
+			<Command name="ДобавитьСклонение" id="1000001">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Добавить склонение</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Добавит пример кода, с помощью которого можно просклонять полученное значения</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Action callType="Before">ДобавитьСклонение</Action>
+				<CurrentRowUse>DontUse</CurrentRowUse>
+			</Command>
+			<Command name="ДобавитьАлгоритм" id="1000003">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Добавить алгоритм</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Добавить алгоритм</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Action callType="Before">ДобавитьАлгоритм</Action>
+			</Command>
+		</Commands>
+	</BaseForm>
+</Form>

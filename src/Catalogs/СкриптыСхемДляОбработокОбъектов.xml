@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="becb07b2-3415-43c9-a364-6c348a8d8f63">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СкриптыСхемДляОбработокОбъектов" category="Object">
+				<xr:TypeId>20e4a80b-d769-492c-9ca7-68a679e948a8</xr:TypeId>
+				<xr:ValueId>a62de217-8fd6-4dc3-b71d-51af6272e4d6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СкриптыСхемДляОбработокОбъектов" category="Ref">
+				<xr:TypeId>2876af58-e292-4451-b674-084f1ff92a2f</xr:TypeId>
+				<xr:ValueId>e4803c91-1dae-4301-a47a-2ade72728837</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СкриптыСхемДляОбработокОбъектов" category="Selection">
+				<xr:TypeId>8e46e63c-eda4-4a40-bd55-c203458458da</xr:TypeId>
+				<xr:ValueId>13863640-24d2-4534-9bc4-5c3d638ee350</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СкриптыСхемДляОбработокОбъектов" category="List">
+				<xr:TypeId>900615a3-5df4-4f40-b2e1-71b44ac05e7e</xr:TypeId>
+				<xr:ValueId>63dc441d-a717-4fd7-9b2d-e891aad49203</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СкриптыСхемДляОбработокОбъектов" category="Manager">
+				<xr:TypeId>d21e2119-ed9a-445a-8979-e7e414f2e1f8</xr:TypeId>
+				<xr:ValueId>00908c6f-dbb2-40d8-9c88-0248e12626c2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СкриптыСхемДляОбработокОбъектов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>6eddeb91-1eaf-46fe-8b28-a306634f399c</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

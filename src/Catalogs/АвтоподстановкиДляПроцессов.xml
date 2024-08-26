@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="ed478949-9787-456a-89d5-dafe6e5de95a">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.АвтоподстановкиДляПроцессов" category="Object">
+				<xr:TypeId>9a3ec1a8-e655-4d5e-80d3-087725b43fbc</xr:TypeId>
+				<xr:ValueId>3be23813-8bc2-43ee-8a9b-a70344aa6e04</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.АвтоподстановкиДляПроцессов" category="Ref">
+				<xr:TypeId>6d3ddd76-a03b-46cf-b075-8cdff292302c</xr:TypeId>
+				<xr:ValueId>537009d5-a7c1-4762-b170-1494505f90e4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.АвтоподстановкиДляПроцессов" category="Selection">
+				<xr:TypeId>11bb157a-d198-4461-a788-486d79561f5c</xr:TypeId>
+				<xr:ValueId>7cb8ea2b-55c7-44b6-840a-6e9117b312b4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.АвтоподстановкиДляПроцессов" category="List">
+				<xr:TypeId>bd4e093e-9b2b-4119-aa6d-94a1277f981f</xr:TypeId>
+				<xr:ValueId>b3433f96-6556-4eae-a622-6abf3f9df0bc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.АвтоподстановкиДляПроцессов" category="Manager">
+				<xr:TypeId>47435fdf-6e25-4a65-90e1-01896f83ef28</xr:TypeId>
+				<xr:ValueId>99dcf489-d8d7-4217-8466-8eb94662c8c6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>АвтоподстановкиДляПроцессов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>5006573b-081a-4071-a1bb-388a1ea75d59</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
